@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Profile({ userData }) {
-    const { avatar, name, tag, location, stats } = userData;
+function Profile({ user }) {
+    const { avatar, name, tag, location, stats } = user;
     return (
         <div className="profile">
             <div className="description">
@@ -35,7 +35,7 @@ function Profile({ userData }) {
 }
 
 Profile.propTypes = {
-    name: PropTypes.string.isRequired,
+    user: PropTypes.object.isRequired,
 };
 
 export default Profile;
