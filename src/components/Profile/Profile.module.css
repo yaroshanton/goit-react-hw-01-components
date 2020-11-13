@@ -22,6 +22,7 @@
 }
 
 .stats {
+  align-items: center;
   display: flex;
   height: 70px;
   justify-content: space-around;
@@ -36,7 +37,6 @@
   text-align: center;
   width: 33%;
   align-items: center;
-  padding: 20px 0;
 }
 
 .stats li:not(:last-child) {
